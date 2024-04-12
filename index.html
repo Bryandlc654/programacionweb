@@ -7,9 +7,34 @@
     <link rel="stylesheet" href="./bootstrap/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <style>
         p {
             margin: 0 !important;
+        }
+
+        .slider-image {
+            height: 25rem;
+            width: 100%;
+        }
+
+        img {
+            object-fit: cover;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+        }
+
+        .carousel-control-prev,.carousel-control-next{
+            background-color: #0000003b;
+        }
+        .carousel-indicators [data-bs-target]{
+            background-color: black;
         }
     </style>
 </head>
@@ -42,7 +67,7 @@
                 <div class="col-12">
                     <nav class="navbar navbar-expand-lg bg-white">
                         <div class="container-fluid navbar__content">
-                            <a class="navbar-brand fw-bolder" href="#">Bryan</a>
+                            <a class="navbar-brand fw-bolder" href="#">Nueva Salud</a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                 aria-expanded="false" aria-label="Toggle navigation">
@@ -54,7 +79,7 @@
                                         <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Portafolio</a>
+                                        <a class="nav-link" href="#">Sobre Nosotros</a>
                                     </li>
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" role="button"
@@ -71,7 +96,7 @@
                                         </ul>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link href=" #"">Contacto</a>
+                                        <a class="nav-link" href="">Contacto</a>
                                     </li>
                                 </ul>
                                 <form class="d-flex" role="search">
@@ -86,7 +111,7 @@
             </div>
 
             <!-- CAROUSEL -->
-            <div class="row">
+            <div class="row mt-5">
                 <div class="col-12">
                     <div id="carouselExampleIndicators" class="carousel slide">
                         <div class="carousel-indicators">
@@ -100,21 +125,21 @@
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img src="https://brandandhealth.com/wp-content/uploads/2022/01/7-estrategias-para-hacer-crecer-tu-cli%CC%81nica-scaled.jpeg"
-                                    class="d-block w-100 object-fit-cover" alt="...">
+                                    class="d-block object-fit-cover slider-image" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="https://manprec.com/cdn/shop/articles/texto3.jpg?v=1572041638"
-                                    class="d-block w-100" alt="...">
+                                <img src="https://manprec.com/cdn/shop/articles/texto3.jpg" class="d-block slider-image"
+                                    alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fmedicalta.com%2Fcategory%2Fdiseno-de-clinica%2F&psig=AOvVaw0O4d4-DUCeRD7BG5ckOWIV&ust=1712448178595000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCICxkd2krIUDFQAAAAAdAAAAABAp"
-                                    class="d-block w-100" alt="...">
+                                <img src="https://i0.wp.com/calmatters.org/wp-content/uploads/2023/04/033023-Hollister-Hospital-LV_10-CM-ES.jpeg?fit=1200%2C800&ssl=1"
+                                    class="d-block slider-image" alt="...">
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
                             data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
+                            <span class="visually-hidden text-black">Previous</span>
                         </button>
                         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
                             data-bs-slide="next">
@@ -124,9 +149,34 @@
                     </div>
                 </div>
             </div>
-        </div>
+            <!--FIN CAROUSEL -->
 
+            <!-- CARDS -->
+            <div class="row mt-5 mb-5">
+                <div class="col-4 bg-black p-0">
+                    <img src="https://img.freepik.com/foto-gratis/mujer-asiatica-salud-posando_1258-36738.jpg?t=st=1712927208~exp=1712930808~hmac=35ed4b9178a38a037025997518cb339984a279b8554969f017d5e745e020521c&w=996"
+                        class="w-100 h-100" alt="">
+                </div>
+                <div class="col-8 bg-dark d-flex align-items-center justify-content-center">
+                    <div class="text-white p-5">
+                        <div class="card-body">
+                            <h5 class="card-title">En Nueva Salud estamos para ti</h5>
+                            <p class="card-text mt-2">Inversión, tecnología y especialistas directamente desde Lima a tu
+                                servicio. Nuestro objetivo es cambiar la forma de hacer salud en la región.
+                            </p>
+                            <a href="#" class="btn bg-white mt-4 text-black"><i
+                                    class="bi bi-calendar-plus me-2"></i>Reservar
+                                cita</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--FIN CARDS -->
+        </div>
     </section>
+
+
+
     <script src="./bootstrap/node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./bootstrap/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
