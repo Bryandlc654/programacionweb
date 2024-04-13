@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #000;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+:root {
+    --yellow: #fcd700;
+}
+
+.header__container-banner {
+    width: 100%;
+    background: rgb(27, 27, 27);
+    background: linear-gradient(90deg, rgba(27, 27, 27, 1) 0%, rgba(27, 27, 27, 1) 27%, rgba(255, 255, 255, 1) 49%, rgba(248, 246, 247, 1) 100%);
+}
+
+.header__container-bannerwow {
+    width: 100%;
+    background-color: #ebebeb;
+}
+
+.header__banner {
+    height: 44px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.header__navbar-container {
+    background-color: var(--yellow);
+}
+
+
+.header__navbar {
+    background-color: var(--yellow) !important;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header__search {
+    border-radius: 2rem;
+    border: 2px solid #000;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.btn__search {
+    border: none;
+    background-color: #000;
+    color: var(--yellow);
+    border-radius: 100%;
+}
+
+.btn__search:hover {
+    background-color: var(--yellow);
+    color: #000;
+}
+
+.nav-link {
+    font-weight: 600 !important;
+}
+
+.card {
+    margin: 0 auto;
+}
+
+.card-title {
+    font-weight: 600;
+    font-size: 1.125rem;
+    margin: 0 !important;
+}
+
+.card__price {
+    font-size: 1.5rem;
+    color: #f10000;
+    font-weight: 600;
+}
+
+.card__button {
+    background-color: var(--yellow);
+    border: none;
+    border-radius: 1rem;
+    font-size: .9rem;
+    font-weight: 600;
+    padding: .5rem 1.25rem;
+    color: #000;
+}
+
+.card__button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.btn_favorite i {
+    color: #000;
+    font-size: 24px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: #0000003b;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: black;
+}
