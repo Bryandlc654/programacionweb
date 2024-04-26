@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function Texto1() {
+            var texto = "<div class='container__noticia'><h2>Érika Villalobos oficializa su relación con el empresario Erick Zapata con tierna foto</h2><p>Poco después que el conductor de ‘La Banda del Chino’ oficializada su romance con la actriz de 28 años de edad, Gia Rosalino, Érika viajó unos días a Miami y disfrutó unos días juntos a sus amistades, pero también se dio tiempo para el amor.</p></div><img src='https://peru21.pe/resizer/eJ7hf3lO-pjkhh5FbtaANVV86-M=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/Z3A4QJTOK5GJBEDWKT2XURY75Q.jpg'>"
+            var contenido = document.getElementById("contenido");
+            contenido.innerHTML = texto;
+        }
+
+        function Texto2() {
+            var texto = "<div class='container__noticia'><h2>Contraloría interviene sedes de los gobiernos regionales de Cusco y Ayacucho por presuntas contrataciones irregulares</h2><p>La Contraloría General de la República informó, a través de redes sociales, que las intervenciones simultáneas tienen como fin recopilar información relacionada a contratación de bienes, servicios, ejecución de obras, y designación de cargos de confianza</p></div><img src='https://e.rpp-noticias.io/large/2024/04/19/373637_1569550.webp'>"
+            var contenido = document.getElementById("contenido");
+            contenido.innerHTML = texto;
+        }
+        function Texto3() {
+            var texto = "<div class='container__noticia'><h2>Policías y ladrones desatan balacera en San Miguel: Un agente de seguridad falleció y dos delincuentes quedaron detenidos</h2><p>El hecho se reportó en la cuadra seis de la avenida Costanera, cuando cuatro delincuentes interceptaron un furgón que acababa de salir del Callao con destino a Surquillo, el mismo que contenía una valiosa mercancía.</p></div><img src='https://trome.com/resizer/AyY3qc_zV4JvQ6TYaui2IDwXww0=/580x330/smart/filters:format(jpeg):quality(90)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5E77K4RMKJBV7LHI2QYKGV54DY.jpg'>"
+            var contenido = document.getElementById("contenido");
+            contenido.innerHTML = texto;
+        }
+        function Texto4() {
+            var texto = "<div class='container__noticia'><h2>Cuáles son las 3 universidades de América Latina entre las 100 mejores del mundo</h2><p>El listado de 2024 elaborado por la firma de análisis Quacquarelli Symonds (QS), lo encabeza a nivel mundial el Instituto Tecnológico de Massachusetts (EE.UU.), seguido por la Universidad de Cambridge y la Universidad de Oxford, ambas en Reino Unido. La clasificación de QS es una de las más prestigiosas del mundo. El principal factor que tienen en cuenta es la reputación académica. También miden cuestiones como la cantidad de personal docente por estudiante.</p></div><img src='https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/1448/live/99593c00-fdc9-11ee-9b7a-090dcac4fa3e.jpg'>"
+            var contenido = document.getElementById("contenido");
+            contenido.innerHTML = texto;
+        }
+
+
+    </script>
+</head>
+
+<body onload="Texto1()">
+    <div class="container__buttons">
+        <button class="button" type="button" onclick="Texto1()">Espectaculos</button>
+        <button class="button" type="button" onclick="Texto2()">Politica</button>
+        <button class="button" type="button" onclick="Texto3()">Policiales</button>
+        <button class="button" type="button" onclick="Texto4()">Internacionales</button>
+    </div>
+
+    <div id="contenido">
+
+    </div>
+</body>
+
+</html>
