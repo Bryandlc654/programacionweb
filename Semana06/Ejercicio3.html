@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <label for="">Datos</label>
+    <input type="text" id="txt_dato">
+    <button id="btn_Agregar">Agregar</button>
+    <br>
+    <select name="" id="cmb_datos">
+        <option value="">Selecciona una opcion</option>
+    </select>
+
+    <script>
+        function agregarDatos() {
+            let texto = document.querySelector("#txt_dato").value;
+            document.querySelector("#cmb_datos").innerHTML += "<option>" + texto + "</option>";
+        }
+
+        let button = document.querySelector("#btn_Agregar");
+        button.addEventListener("click", agregarDatos)
+    </script>
+</body>
+
+</html>

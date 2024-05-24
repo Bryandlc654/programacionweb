@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="cmb_origen">Origen</label>
+    <select id="cmb_origen">
+        <option value="">Seleccionar Origen</option>
+        <option value="Arroz">Arroz</option>
+        <option value="Azucar">Azúcar</option>
+        <option value="Sal">Sal</option>
+    </select>
+
+    <label for="cmb_destino">Destino</label>
+    <select id="cmb_destino">
+        <option value="">Seleccionar Destino</option>
+    </select>
+
+    <script>
+        function agregarOpcion() {
+            const origen = document.querySelector("#cmb_origen");
+            const destino = document.querySelector("#cmb_destino");
+            const seleccion = origen.value;
+
+            if (seleccion && !Array.from(destino.options).some(option => option.value === seleccion)) {
+                const nuevaOpcion = document.createElement("option");
+                nuevaOpcion.text = seleccion;
+                nuevaOpcion.value = seleccion;
+                destino.add(nuevaOpcion);
+            }
+        }
+
+        const cmb_origen = document.querySelector("#cmb_origen");
+        cmb_origen.addEventListener("change", agregarOpcion);
+    </script>
+</body>
+
+<!-- 
+    Array.from(destino.options): Convierte la colección de opciones en un array.
+.some(option => option.value === seleccion): Recorre el array y devuelve true si alguna opción tiene el mismo valor que seleccion.
+!: Niega el resultado de some, es decir, la condición será true solo si ninguna opción en el menú de "destino" tiene el mismo valor que seleccion.
+ -->
+
+</html>
